@@ -12,6 +12,10 @@ app.get("/",(req,res)=>{
     res.render("index.ejs")
 })
 
+app.post("/",(req,res)=>{
+    res.redirect("/")
+})
+
 app.listen(PORT,(req,res)=>{
     console.log(`Listening on ${PORT}`)
 })
